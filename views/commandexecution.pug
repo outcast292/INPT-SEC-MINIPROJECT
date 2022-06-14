@@ -1,0 +1,13 @@
+html
+  head
+    title="NodeJS Command Injection Example"
+
+  body
+    h1="List Folders"
+
+    form(action="/commandexecution" method="GET")
+      input(type="text" name="folder" value=folder)
+      button(type="submit") Submit
+
+    code
+      pre #{output}
